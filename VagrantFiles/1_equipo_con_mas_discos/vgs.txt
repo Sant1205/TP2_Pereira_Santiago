@@ -1,0 +1,2 @@
+  VG       #PV #LV #SN Attr   VSize VFree
+  vg_datos   2   1   0 wz--n- 6.49g 5.49g
