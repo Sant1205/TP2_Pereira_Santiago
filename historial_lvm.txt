@@ -1,0 +1,67 @@
+    1  pwd
+    2  sudo fdisk -l
+    3  exit
+    4  lsblk
+    5  sudo fsdisk /dev/sdd
+    6  sudo fdisk /dev/sdd
+    7  lsblk
+    8  sudo mkswap /dev/sdd1
+    9  sudo mkswap /dev/sdd2
+   10  exiit
+   11  exit
+   12  sudo fdisk /dev/sdd
+   13  lsblk
+   14  sudo mkswap /dev/sdd1
+   15  sudo mkswap /dev/sdd2
+   16  free -H
+   17  free -h
+   18  sudo mkswap /dev/sdd1
+   19  sudo swapon /dev/sdd1
+   20  free -h
+   21  sudo pvcreate /dev/sdc
+   22  sudo pvcreate /dev/sdd2
+   23  pvs
+   24  sudo pvs
+   25  sudo vgcreate vg_datos /dev/sdc /dev/sdd2
+   26  sudo vgs
+   27  sudo pvs
+   28  sudo vgcreate vg_web /dev/sdc /dev/sdd2
+   29  sudo vgcreate vg_web /dev/sdc2
+   30  sudo pvs
+   31  sudo lvcreate -L 1G vg_datos -n lv_datos1
+   32  sudo lvs
+   33  lv_datos1 vg_datos -wi-a----- 1.00g
+   34  sudo lvs
+   35  sudo mkfs.ext4 /dev/vg_datos/lv_datos1
+   36  sudo mkdir /mnt/datos
+   37  sudo mount /dev/vg_datos/lv_datos1 /mnt/datos
+   38  df -h
+   39  cd ~/carpeta_compartida
+   40  sudo pvs > pvs.txt
+   41  sudo vgs > vgs.txt
+   42  sudo lvs > lvs.txt
+   43  history > historial_lvm.txt
+   44  ls
+   45  git add .
+   46  ls -a
+   47  exit
+   48  ls -l
+   49  cd .ssh
+   50  ls -l
+   51  exit
+   52  cd repogit
+   53  ls -l
+   54  git clone git@github.com:Sant1205/TP2_Pereira_Santiago.git
+   55  ls -l
+   56  ls
+   57  pwd
+   58  cd TP2_Pereira_Santiago
+   59  cd ~
+   60  git clone git@github.com:Sant1205/TP2_Pereira_Santiago.git
+   61  git clone https://github.com/Sant1205/TP2_Pereira_Santiago.git
+   62  cd TP2_Pereira_Santiago
+   63  ls
+   64  sudo pvs > pvs.txt
+   65  sudo vgs > vgs.txt
+   66  sudo lvs > lvs.txt
+   67  history > historial_lvm.txt
